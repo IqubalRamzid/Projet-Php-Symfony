@@ -13,17 +13,13 @@
 
 		{% block body %}{% endblock %}
 		{% apply inline_css(source("css/home_style.css"), source("css/home_style.css")) %}
-		<button type="button" class="btn btn-primary">
 
-			<a class="btnA" href="{{ path('app_login') }}">se connecter</a>
-
-		</button>
-
+		<a class="btnHome" href="{{path('app_home')}}">Accueil</a>
 
 		<div class="btn3">
 			<a class="btnA" href="{{ path('app_login') }}">se connecter</a>
 
-			<a href="{{ path('app_register') }}">
+			<a href="{{ path('app_inscription') }}">
 				<span class="text-btn1">Inscription</span>
 			</a>
 		</div>

@@ -1,12 +1,23 @@
 
 body {
     font: bold 100% sans-serif;
+    margin: 10px;
 }
 .btn3 {
    position: absolute;
     top: 0;
     right: 0;
-    background-color: greenyellow;
+    background-color: red;
+    color: whitesmoke;
+}
+.btnHome{
+    position: absolute;
+    top: 0;
+    left : 0;
+    background-color: blue;
+    color : whitesmoke
+
+
 }
 
 h1 {
@@ -53,15 +64,5 @@ h1 {
     font: bold 100%  sans-serif;
     color : blue;
     }
-        #text-h{
-            color :blue;
-
-            background: white;
-        
-            position: absolute;
-            
-            bottom:0;
-            
-        }
-        
+   
          

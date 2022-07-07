@@ -33,11 +33,11 @@ class RegistrationFormType extends AbstractType
                 'attr' => ['autocomplete' => 'new-password'],
                 'constraints' => [
                     new NotBlank([
-                        'message' => 'Please enter a password',
+                        'message' => 'Entrez un mot de passe',
                     ]),
                     new Length([
                         'min' => 6,
-                        'minMessage' => 'Your password should be at least {{ limit }} characters',
+                        'minMessage' => 'le mot de passe doit avoir {{ limit }} caractères',
                         // max length allowed by Symfony for security reasons
                         'max' => 4096,
                     ]),
@@ -45,7 +45,10 @@ class RegistrationFormType extends AbstractType
             ])
             ->add('adresse')
             ->add('code_postal')
-            ->add('telephone');
+            ->add('telephone')
+            ->add('prenom')
+            ->add('nom')
+            ->add('email');
     }
 
     public function configureOptions(OptionsResolver $resolver): void

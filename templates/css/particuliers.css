@@ -1,3 +1,6 @@
+body{
+    margin : 50px;
+}
 .demJur{
     background-color: orange;
     border: 2px solid black;
@@ -18,4 +21,9 @@
 }
 .mini-bloc{
     border : 2px solid black
+}
+.btn{
+    color: whitesmoke;
+    background-color: blue;
+
 }

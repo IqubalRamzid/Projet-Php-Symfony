@@ -1,21 +1,89 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Register{% endblock %}
+{% block title %}Inscription
+{% endblock %}
+
 
 {% block body %}
-    {% for flash_error in app.flashes('verify_email_error') %}
-        <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
-    {% endfor %}
+	{% for flash_error in app.flashes('verify_email_error') %}
+		<div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+	{% endfor %}
 
-    <h1>Register</h1>
+	<h2 class="title">S'inscrire dans l'Association</h2>
+	<div class="form">
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.username) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
+		<div class="champ">
+			{{ form_start(registrationForm) }}
+		</div>
+		<div class="champ">
+			{{ form_row(registrationForm.username, { label:"Nom du compte"}) }}
+		</div>
+		<div class="champ">
+			{{ form_row(registrationForm.prenom) }}
+		</div>
+		<div class="champ">
+			{{ form_row(registrationForm.nom) }}
+		</div>
+		<div class="champ">
+			{{ form_row(registrationForm.email) }}
+		</div>
+		<div class="champ">
+			{{ form_row(registrationForm.plainPassword, {
+            label: 'Mot de Passe'
         }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+		</div>
+		<div class="champ">
+			{{form_row(registrationForm.adresse)}}
+		</div>
+		<div class="champ">
+			{{form_row(registrationForm.code_postal)}}
+		</div>
+		<div class="champ">
+			{{form_row(registrationForm.telephone)}}
+		</div>
+		<div class="labels">
+			{{ form_row(registrationForm.agreeTerms, {label: "Acceptez les conditions d'inscription"}) }}
+		</div>
 
-        <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
+		<button type="submit" class="btn">Inscription</button>
+
+	</div>
+	{{ form_end(registrationForm) }}
+
+	<style>
+		.form {
+			position: relative;
+			font-family: helvetica;
+			justify-content: space-between;
+
+		}
+		.title {
+			position: relative;
+			top: 10;
+			right: 10;
+		}
+		.champ {
+			font-family: 'helvetica', 'sans-serif';
+			color: blue;
+			width: 20%;
+			margin: 10px;
+			justify-content: center;
+		}
+		.form-button {
+
+			justify-content: center;
+		}
+		.btn {
+			background-color: LimeGreen;
+			border: solid LimeGreen 1px;
+			border-radius: 5px;
+		}
+		.labels {
+			width: 50%;
+			background-color: Gainsboro;
+			padding: 1%;
+			border-radius: 5px;
+			text-align: center
+		}
+	</style>
 {% endblock %}
