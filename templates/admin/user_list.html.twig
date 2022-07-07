@@ -1,0 +1,51 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<table>
+
+		<thead>
+			<tr>
+
+
+				<th>adresse</th>
+				<th>code postal</th>
+				<th>Ville</th>
+				<th>telephone</th>
+				<th>Email</th>
+
+			</tr>
+
+		</thead>
+
+	</thead>
+
+	<tbody>
+
+		{% for users in users %}
+
+
+			<tr>
+
+
+				<td>{{users.adresse}}</td>
+				<td>
+					{% for roles in users.roles %}
+						{{ roles }}
+					{% endfor %}
+				</td>
+				<td>{{users.telephone}}</td>
+				<td>{{users.username}}</td>
+				<td>{{users.codepostal}}</td>
+				{# pas mettre l'underscore pour code_postal ca fait une erreur #}
+
+			</tr>
+
+		{% else %}
+
+			<tr colspan|></tr>
+
+		{% endfor %}
+
+	</tbody>
+</table>{% endblock %}

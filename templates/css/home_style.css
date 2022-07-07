@@ -1,0 +1,67 @@
+
+body {
+    font: bold 100% sans-serif;
+}
+.btn3 {
+   position: absolute;
+    top: 0;
+    right: 0;
+    background-color: greenyellow;
+}
+
+h1 {
+    justify-content: center;
+    margin : 10px;
+    width: 50%;
+    display: flex;
+}
+.Bloc1 {
+    background-color: rgb(199, 61, 61);
+    color: white;
+
+}
+.button {
+    margin: auto;
+    width: 100px;
+    display: flex;
+}
+
+
+.btn1 {
+    background-color: rgb(255, 115, 0);
+    border: 2px solid darkblue;
+    margin: 10px;
+    padding: 10px;
+
+
+}
+.btn2 {
+    background-color: rgb(53, 53, 194);
+    border: 2px solid darkblue;
+    margin: 10px;
+    justify-content: center;
+    padding: 10px
+}
+
+.text-btn1 {
+    color: white
+}
+
+.contact{
+    position: relative;
+    justify-content: center;
+    font: bold 100%  sans-serif;
+    color : blue;
+    }
+        #text-h{
+            color :blue;
+
+            background: white;
+        
+            position: absolute;
+            
+            bottom:0;
+            
+        }
+        
+         

@@ -1,0 +1,38 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	{% apply inline_css(source("css/particuliers.css"), source("css/particuliers.css")) %}
+
+	<div class="demAD2">
+		<H2>Démarches administratives
+		</H2>
+		<div class="mini-bloc">
+			création d'entreprises (auto-entrepreuneurs et professions libérales)
+		</div>
+		<div class="mini-bloc">
+			déclarations fiscales du chiffre d'affaires
+		</div>
+		<div class="mini-bloc">
+			emission de bons de commandes/ dévis / factures
+		</div>
+	</div>
+
+	<div class="demJUR2">
+		<H2>Démarches juridiques
+		</H2>
+		<div class="mini-bloc">
+			Orientation vers une assistance juridique
+		</div>
+		<div class="mini-bloc">
+			rédaction de contrats ou avenants
+		</div>
+		<div class="mini-bloc">
+			enseignement aux entreprises en matière de droit de travail
+		</div>
+	</div>
+
+
+	{% endapply %}
+
+
+{% endblock %}

@@ -1,0 +1,21 @@
+.demJur{
+    background-color: orange;
+    border: 2px solid black;
+}
+.title {
+    width: 50%; 
+    margin: auto;
+}
+.demAD{
+    background-color: rgb(56, 210, 56);
+    border: 2px solid black;
+}
+.demAD2 {
+    background-color: rgb(56, 210, 56) ;
+}
+.demJUR2{
+    background-color: orange;
+}
+.mini-bloc{
+    border : 2px solid black
+}

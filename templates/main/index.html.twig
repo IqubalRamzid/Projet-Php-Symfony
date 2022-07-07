@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Experts AAJ
+{% endblock %}
+
+{% block body %}
+	{% apply inline_css(source("css/home_style.css"), source("css/home_style.css")) %}
+
+	<body>
+		<h1>
+			Aides aux démarches administratives et juridiques
+		</h1>
+
+		<div class="Bloc1">
+
+			<h2>Nos services
+				<H2>
+					<p>
+						Démarches administratives et juridiques pour Particuliers et Professionels
+					</p>
+					<p>
+						Tout besoin de domiciliation administrative pour Particuliers et entreprises
+					</p>
+					<p>
+						Tout service susceptible de contribuer à la réalisation, au développement ou à l'amélioration des conditions de vie des membres ou des adhérents.
+					</p>
+				</div>
+
+				<div class="button">
+					<div class="btn1">
+
+						<a href="{{ path('particuliers') }}">
+							<span class="text-btn1">Particuliers</span>
+						</a>
+
+					</div>
+					<div class="btn2">
+						<a href="{{ path('professionel') }}">
+							<span class="text-btn1">Professionels</span>
+						</a>
+					</div>
+
+				</div>
+
+
+			</body>
+			{% endapply %}
+		{% endblock %}
