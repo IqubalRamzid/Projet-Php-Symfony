@@ -73,9 +73,10 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     private $email;
 
     /**
-     * @ORM\Column(type="date")
+     * @ORM\Column(type="string", length=50)
      */
-    private $datenaissance;
+
+    private $ville;
 
     public function getId(): ?int
     {
@@ -241,6 +242,18 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
     public function setEmail(?string $email): self
     {
         $this->email = $email;
+
+        return $this;
+    }
+
+    public function getVille(): ?string
+    {
+        return $this->ville;
+    }
+
+    public function setVille(string $ville): self
+    {
+        $this->ville = $ville;
 
         return $this;
     }

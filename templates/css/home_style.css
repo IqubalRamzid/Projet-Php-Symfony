@@ -1,7 +1,15 @@
 
 body {
     font: bold 100% sans-serif;
-    margin: 10px;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+footer {
+    position: absolute;
+   bottom:0;  /* on le colle en bas */
+   width:100%;
+      /* Hauteur du pied de page */
 }
 .btn3 {
    position: absolute;
@@ -19,16 +27,23 @@ body {
 
 
 }
+.btn{
+    background-color : blue;
+    color :whitesmoke
+
+}
 
 h1 {
     justify-content: center;
     margin : 10px;
-    width: 50%;
+   
     display: flex;
+    color : rgb(15, 12, 176);
 }
 .Bloc1 {
     background-color: rgb(199, 61, 61);
     color: white;
+    padding: 30px;
 
 }
 .button {
@@ -65,4 +80,6 @@ h1 {
     color : blue;
     }
    
-         
+nav {
+ background: red;
+}

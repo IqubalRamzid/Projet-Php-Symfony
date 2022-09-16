@@ -1,0 +1,49 @@
+form{
+        margin: 0;
+        padding: 0;
+     
+}
+
+.btn{
+    color: whitesmoke;
+    background-color: blue;
+
+}
+
+.title {
+    
+    font-family: 'helvetica', 'sans-serif';
+    position: relative;
+    top: 10;
+    right: 10;
+    margin : 50px;
+}
+.champ {
+    font-family: 'helvetica', 'sans-serif';
+    color: blue;
+    margin: 20px;
+    justify-content: center;
+}
+.form-button {
+
+    justify-content: center;
+}
+.btn {
+    background-color: LimeGreen;
+    border: solid LimeGreen 1px;
+    border-radius: 5px;
+}
+.labels {
+    width: 30%;
+    background-color: Gainsboro;
+    padding: 1%;
+    border-radius: 5px;
+    text-align: center;
+}
+#registration_form_inscription{
+
+    
+    background: dodgerblue;
+    margin: 1rem;
+    padding: 10px;
+}

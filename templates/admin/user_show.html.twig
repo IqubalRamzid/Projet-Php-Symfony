@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+	<table>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Nom d'utilisateur</th>
+				<th>Prenom</th>
+				<th>Nom</th>
+				<th>Email</th>
+				<th>Rôle</th>
+
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>{{ users.id }}</td>
+				<td>{{ users.username }}</td>
+				<td>{{ users.prenom }}</td>
+				<td>{{ users.nom }}</td>
+				<td>{{ users.email }}</td>
+				<td>{{ users.roles[0] }}</td>
+
+			</tr>
+		</tbody>
+	</table>
+{% endblock %}

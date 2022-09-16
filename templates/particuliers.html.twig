@@ -3,70 +3,75 @@
 {% block body %}
 	{% apply inline_css(source("css/particuliers.css"), source("css/particuliers.css")) %}
 
-	<body>
 
-		<main>
-
-			<header>
-				<H1 class="title">
-					Particuliers
-					<H1></header>
+	<header>
+		<H1 class="title">
+			Particuliers
+			<H1></header>
 
 
-					<div class="demAD">
-						<h2>Démarches administratives</h2>
-						<ul>
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#">Démarches administratives</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">rédaction de courriers</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Etablissement et règlement des factures</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link">Déclaration
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link">Réservation</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#">Avis</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link">L'hôtel</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link">Actualités</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link">Contact</a>
-							</li>
-						</ul>
+			<div class="demAD">
+				<h2>Démarches administratives</h2>
+				<ul>
+					<li class="nav-item">
+						Déclaration CAF
+					</li>
+					<li class="nav-item">
+						rédaction de courriers
+					</li>
+					<li class="nav-item">
+						Déclaration d'embauche
+					</li>
+					<li class="nav-item">
+						Déclaration fiscales
 
-					</div>
+					</li>
+					<li class="nav-item">
+						Demande de retraite
+					</li>
+					<li class="nav-item">
+						Demande CMU
+					</li>
+				</a>
+			</li>
+			<li class="nav-item">
+				Demande carte vitale
+			</li>
+			<li class="nav-item">
+				Demande de logement
+			</li>
+			<li class="nav-item">
+				Ouverture de comptes bancaires en ligne
+			</li>
+			<li class="nav-item">
+				Ouverture des droits sécurité sociale
+			</li>
+			<li class="nav-item">
+				Création d'entreprise
+			</li>
+			<li class="nav-item">
+				Aide à l'inscription au permis de conduire
+			</li>
 
+		</ul>
 
-					<div class="demJur">
-						<h2>
-							Démarches juridiques
-						</H2>
-						<ul class="demJurLi">
-							<li>Renseignement sur les question de droit des affaires et de la famille</li>
-							<li>Orientation vers une assistance juridique en matière de : Divorce... etc</li>
-							<li>Orientation Vers un conseiller</li>
-
-						</ul>
-					</div>
-
-
-				</main>
+	</div>
 
 
-			</body>
+	<div class="demJur">
+		<h2>
+			Démarches juridiques
+		</H2>
+		<ul>
+			<li class="demJurLi">Renseignement sur les question de droit des affaires et de la famille</li>
+			<li class="demJurLi">Orientation vers une assistance juridique en matière de : Divorce... etc</li>
+			<li class="demJurLi">Orientation Vers un conseiller</li>
+
+		</ul>
+	</div>
 
 
-			{% endapply %}
-		{% endblock %}
+	{% endapply %}
+
+
+{% endblock %}

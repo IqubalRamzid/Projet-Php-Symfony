@@ -1,0 +1,12 @@
+{% extends "base.html.twig" %}
+{% apply inline_css(source("css/particuliers.css"), source("css/particuliers.css")) %}
+
+{% block body %}
+
+	{{form(userForm)}}
+
+		{% endapply %}
+
+	{% endblock %}
+
+{% endblock %}

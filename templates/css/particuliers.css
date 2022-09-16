@@ -1,27 +1,50 @@
 body{
-    margin : 50px;
+    
 }
 .demJur{
     background-color: orange;
-    border: 2px solid black;
+    padding :10px;
+    margin : 20px;
+    border: rgb(169, 15, 15) 1rem solid;
+    box-shadow:10px 5px 5px orange ;
 }
 .title {
-    width: 50%; 
-    margin: auto;
+    width: 50%;
+    margin : auto; 
 }
 .demAD{
-    background-color: rgb(56, 210, 56);
-    border: 2px solid black;
+    background-color: rgb(56, 210, 56) ;
+    padding : 10px;
+    margin: 20px;
+    border: rgb(22, 15, 169) 1rem solid;
+    box-shadow:rgb(56, 210, 56) 10px 5px 5px;
+    
 }
 .demAD2 {
     background-color: rgb(56, 210, 56) ;
+    padding : 10px;
+    margin: 20px;
+    border: rgb(22, 15, 169) 1rem solid;
+    box-shadow:rgb(56, 210, 56) 10px 5px 5px;
 }
 .demJUR2{
     background-color: orange;
+    padding : 10px;
+    margin : 20px;
+    border: rgb(169, 15, 15) 1rem solid;
+    box-shadow:10px 5px 5px orange ;
+
 }
 .mini-bloc{
-    border : 2px solid black
+margin :10px;
 }
+.nav-item{
+    margin:10px;
+}
+.demJurLi{
+    margin:10px;
+}
+
 .btn{
     color: whitesmoke;
     background-color: blue;
