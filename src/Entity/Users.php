@@ -14,7 +14,6 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class Users implements UserInterface, PasswordAuthenticatedUserInterface
 {
-    public $table = "users";
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
@@ -78,6 +77,8 @@ class Users implements UserInterface, PasswordAuthenticatedUserInterface
      */
 
     private $ville;
+
+    public $table = "users";
 
     public function getId(): ?int
     {
