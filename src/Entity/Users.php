@@ -14,6 +14,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class Users implements UserInterface, PasswordAuthenticatedUserInterface
 {
+    public $table = "users";
     /**
      * @ORM\Id
      * @ORM\GeneratedValue
