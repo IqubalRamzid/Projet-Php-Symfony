@@ -12,6 +12,7 @@ use Doctrine\Migrations\AbstractMigration;
  */
 final class Version20220915232337 extends AbstractMigration
 {
+    protected $table = 'users';
     public function getDescription(): string
     {
         return '';
