@@ -22,7 +22,7 @@ form{
     font-family: 'helvetica', 'sans-serif';
     color: blue;
     margin: 20px;
-    justify-content: center;
+    display: inline-block;
 }
 .form-button {
 

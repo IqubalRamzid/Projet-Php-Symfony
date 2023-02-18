@@ -9,13 +9,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class MainController extends AbstractController
 {
     /**
-     * @Route("/", name="app_home")
+     * @Route("/app_home", name="app_home")
      */
-    public function index(): Response
+    public function index()
     {
-        return $this->render('main/index.html.twig', [
-            'controller_name' => 'MainController',
-        ]);
+        return $this->render('main/index.html.twig');
     }
     /**
      * @Route("/particuliers", name="particuliers")
@@ -31,4 +29,14 @@ class MainController extends AbstractController
     {
         return $this->render('professionel.html.twig');
     }
+    /**
+     * @Route("/contact",name="contact")
+     */
+    public function contact()
+    {
+        return $this->render('contact.html.twig');
+    }
+    /**
+     * @Route("/robots.txt",name="robots.txt")
+     */
 }
