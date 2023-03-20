@@ -6,7 +6,7 @@ form{
 
 .btn{
     color: whitesmoke;
-    background-color: blue;
+    background-color: rgb(33, 170, 161);
 
 }
 
@@ -20,7 +20,7 @@ form{
 }
 .champ {
     font-family: 'helvetica', 'sans-serif';
-    color: blue;
+    color: rgb(33, 170, 161);
     margin: 20px;
     display: inline-block;
 }
@@ -28,7 +28,7 @@ form{
 
     justify-content: center;
 }
-.btn {
+#submit {
     background-color: LimeGreen;
     border: solid LimeGreen 1px;
     border-radius: 5px;

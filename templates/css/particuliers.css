@@ -1,52 +1,61 @@
-body{
-    
+* {
+    margin: 0;
+    padding: 0;
 }
 .demJur{
-    background-color: orange;
-    padding :10px;
-    margin : 20px;
-    border: rgb(169, 15, 15) 1rem solid;
-    box-shadow:10px 5px 5px orange ;
+    font-size: large;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px,25fr));
+    
 }
 .title {
-    width: 50%;
-    margin : auto; 
+    margin : 20px; 
+}
+h2{
+    margin : 30px;
 }
 .demAD{
-    background-color: rgb(56, 210, 56) ;
-    padding : 10px;
-    margin: 20px;
-    border: rgb(22, 15, 169) 1rem solid;
-    box-shadow:rgb(56, 210, 56) 10px 5px 5px;
+    font-size: large;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px,25fr));
     
 }
 .demAD2 {
-    background-color: rgb(56, 210, 56) ;
-    padding : 10px;
-    margin: 20px;
-    border: rgb(22, 15, 169) 1rem solid;
-    box-shadow:rgb(56, 210, 56) 10px 5px 5px;
+    font-size: large;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px,20fr));
+    padding: 10px;
 }
 .demJUR2{
-    background-color: orange;
-    padding : 10px;
-    margin : 20px;
-    border: rgb(169, 15, 15) 1rem solid;
-    box-shadow:10px 5px 5px orange ;
+    font-size: large;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px,20fr));
 
 }
 .mini-bloc{
-margin :10px;
+    text-align: center;
+    padding: 2rem 2rem;
+    box-shadow: (var(--primary));
+
 }
 .nav-item{
-    margin:10px;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    box-shadow: (var(--primary));
 }
 .demJurLi{
-    margin:10px;
+    text-align: center;
+    padding: 1rem 1.5rem;
 }
 
-.btn{
-    color: whitesmoke;
-    background-color: blue;
-
+img{
+    width: 300px;
 }

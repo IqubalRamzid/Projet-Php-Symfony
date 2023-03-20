@@ -3,53 +3,44 @@
 {% block body %}
 	{% apply inline_css(source("css/particuliers.css"), source("css/particuliers.css")) %}
 
-	<div class="demAD2">
-		<H2>Démarches administratives
-		</H2>
-		<ul>
+	<H2>Démarches administratives
+	</H2>
 
-			<li>
-				<div class="mini-bloc">
-					création d'entreprises (auto-entrepreuneurs et professions libérales)
-				</div>
-			</li>
-			<li>
-				<div class="mini-bloc">
-					déclarations fiscales du chiffre d'affaires
-				</div>
-			</li>
-			<li>
-				<div class="mini-bloc">
-					emission de bons de commandes/ dévis / factures
-				</div>
-			</li>
-		</ul>
+	<div class="demAD2">
+		<div class="mini-bloc">
+			création d'entreprises (auto-entrepreuneurs et professions libérales)
+			<img src="{{ asset('images/img2.png') }}" alt="logo CAF">
+		</div>
+		<div class="mini-bloc">
+			déclarations fiscales du chiffre d'affaires
+			<img src="{{ asset('images/impot-2021-la-date-limite-de-votre-declaration-de--.webp') }}" alt="logo CAF">
+		</div>
+
+		<div class="mini-bloc">
+			emission de bons de commandes/ dévis / factures
+			<img src="{{ asset('images/img5.png') }}" alt="logo CAF">
+		</div>
+
 
 	</div>
 
+	<H2>Démarches juridiques
+	</H2>
 	<div class="demJUR2">
-		<H2>Démarches juridiques
-		</H2>
-		<ul>
 
-			<li>
-				<div class="mini-bloc">
-					Orientation vers une assistance juridique
-				</div>
-			</li>
+		<div class="mini-bloc">
+			Orientation vers une assistance juridique
+			<img src="{{ asset('images/img7.jpg') }}" alt="logo CAF">
+		</div>
 
-			<li>
-				<div class="mini-bloc">
-					rédaction de contrats ou avenants
-				</div>
-			</li>
-
-			<li>
-				<div class="mini-bloc">
-					enseignement aux entreprises en matière de droit de travail
-				</div>
-			</li>
-		</ul>
+		<div class="mini-bloc">
+			rédaction de contrats ou avenants
+			<img src="{{ asset('images/ma-demande-de-retraite.jpg') }}" alt="logo CAF">
+		</div>
+		<div class="mini-bloc">
+			enseignement aux entreprises en matière de droit de travail
+			<img src="{{ asset('images/img5.png') }}" alt="logo CAF">
+		</div>
 	</div>
 
 	{% endapply %}

@@ -2,76 +2,84 @@
 
 {% block body %}
 	{% apply inline_css(source("css/particuliers.css"), source("css/particuliers.css")) %}
-
-
 	<header>
 		<H1 class="title">
 			Particuliers
-			<H1></header>
+		</H1>
+	</header>
+
+	<body>
+		<h2>Démarches administratives</h2>
+		<section class="demAD">
+
+			<div class="nav-item">
+				Déclaration CAF
+				<img src="{{ asset('images/1200px-Caisse_d_allocations_familiales_france_logo.svg.png') }}" alt="logo CAF">
+
+			</div>
+			<div class="nav-item">
+				rédaction de courriers
+				<img src="{{ asset('images/Les-règles-de-la-rédaction-dune-lettre-officielle.jpg') }}" alt="aide pour écrire une lettre">
+			</div>
+			<div class="nav-item">
+				Déclaration d'embauche
+				<img src="{{ asset('images/img4.png') }}" alt="aide pour écrire une lettre">
+			</div>
+			<div class="nav-item">
+				Déclaration fiscales
+				<img src="{{ asset('images/impot-2021-la-date-limite-de-votre-declaration-de--.webp') }}" alt="logo CAF">
+			</div>
+			<div class="nav-item">
+				Demande de retraite
+				<img src="{{ asset('images/ma-demande-de-retraite.jpg') }}" alt="logo CAF">
+			</div>
+			<div class="nav-item">
+				Demande CMU
+				<img src="{{ asset('images/img1.png') }}" alt="logo CAF">
+			</div>
 
 
-			<div class="demAD">
-				<h2>Démarches administratives</h2>
-				<ul>
-					<li class="nav-item">
-						Déclaration CAF
-					</li>
-					<li class="nav-item">
-						rédaction de courriers
-					</li>
-					<li class="nav-item">
-						Déclaration d'embauche
-					</li>
-					<li class="nav-item">
-						Déclaration fiscales
-
-					</li>
-					<li class="nav-item">
-						Demande de retraite
-					</li>
-					<li class="nav-item">
-						Demande CMU
-					</li>
-				</a>
-			</li>
-			<li class="nav-item">
+			<div class="nav-item">
 				Demande carte vitale
-			</li>
-			<li class="nav-item">
+				<img src="{{ asset('images/carte-vitale-CPAM.png') }}" alt="logo CAF">
+			</div>
+			<div class="nav-item">
 				Demande de logement
-			</li>
-			<li class="nav-item">
+				<img src="{{ asset('images/www.demande-logement-social.gouv.fr-1-an-apres-le-lancement-du-site-il-s-enrichit_articleimage.jpg') }}" alt="logo CAF">
+			</div>
+			<div class="nav-item">
 				Ouverture de comptes bancaires en ligne
-			</li>
-			<li class="nav-item">
+				<img src="{{ asset('images/ouvrir-compte-bancaire-ligne.jpg') }}" alt="logo CAF">
+			</div>
+			<div class="nav-item">
 				Ouverture des droits sécurité sociale
-			</li>
-			<li class="nav-item">
+				<img src="{{ asset('images/img3.jpg') }}" alt="logo CAF">
+			</div>
+			<div class="nav-item">
 				Création d'entreprise
-			</li>
-			<li class="nav-item">
+				<img src="{{ asset('images/img2.png') }}" alt="logo CAF">
+			</div>
+			<div class="nav-item">
 				Aide à l'inscription au permis de conduire
-			</li>
-
-		</ul>
-
-	</div>
+				<img src="{{ asset('images/Attestation-inscription-permis-ANTS-1.webp') }}" alt="logo CAF">
+			</div>
+		</section>
 
 
-	<div class="demJur">
 		<h2>
 			Démarches juridiques
-		</H2>
-		<ul>
-			<li class="demJurLi">Renseignement sur les question de droit des affaires et de la famille</li>
-			<li class="demJurLi">Orientation vers une assistance juridique en matière de : Divorce... etc</li>
-			<li class="demJurLi">Orientation Vers un conseiller</li>
-
-		</ul>
-	</div>
-
-
+		</h2>
+		<div class="demJur">
+			<div class="demJurLi">
+				Renseignement sur les question de droit des affaires et de la famille
+				<img src="{{ asset('images/img5.png') }}" alt="logo CAF"></div>
+			<div class="demJurLi">
+				Orientation vers une assistance juridique en matière de : Divorce... etc
+				<img src="{{ asset('images/img6.png') }}" alt="logo CAF"></div>
+			<div class="demJurLi">
+				Orientation Vers un conseiller
+				<img src="{{ asset('images/img7.jpg') }}" alt="logo CAF"></div>
+		</div>
+	</body>
 	{% endapply %}
-
-
 {% endblock %}

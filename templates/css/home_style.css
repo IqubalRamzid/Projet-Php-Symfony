@@ -1,44 +1,12 @@
 
-body {
-    font: bold 100% sans-serif;
-    margin: 0 auto;
-    width: 100%;
-    
+body{
+    font-family: 'Anton', sans-serif;
 }
 footer {
     position: absolute;
    bottom:0;  /* on le colle en bas */
    width:100%;
       /* Hauteur du pied de page */
-}
-.btn3 {
-   position: absolute;
-    top: 0;
-    right: 0;
-    background-color: red;
-    color: whitesmoke;
-}
-.btnHome{
-    position: absolute;
-    top: 0;
-    left : 0;
-    background-color: blue;
-    color : whitesmoke
-
-
-}
-.btn{
-    background-color : blue;
-    color :whitesmoke
-
-}
-
-h1 {
-    justify-content: center;
-    margin : 10px;
-   
-    display: flex;
-    color : rgb(15, 12, 176);
 }
 .Bloc1 {
     background-color: rgb(199, 61, 61);
@@ -52,34 +20,7 @@ h1 {
     display: flex;
 }
 
-
-.btn1 {
-    background-color: rgb(255, 115, 0);
-    border: 2px solid darkblue;
-    margin: 10px;
-    padding: 10px;
-
-
-}
-.btn2 {
-    background-color: rgb(53, 53, 194);
-    border: 2px solid darkblue;
-    margin: 10px;
-    justify-content: center;
-    padding: 10px
-}
-
 .text-btn1 {
     color: white
 }
 
-.contact{
-    position: relative;
-    justify-content: center;
-    font: bold 100%  sans-serif;
-    color : blue;
-    }
-   
-nav {
- background: red;
-}

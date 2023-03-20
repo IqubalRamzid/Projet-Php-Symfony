@@ -4,55 +4,32 @@
 {% endblock %}
 
 {% block body %}
-	{% apply inline_css(source("css/home_style.css"), source("css/home_style.css")) %}
+	{% apply inline_css(source("css/accueil.css"), source("css/accueil.css")) %}
 
 	<body>
-		<h1 class="title1">
-			Aides aux démarches administratives et juridiques
-		</h1>
+		<div class="mainbloc">
+			<h1 class="maintitle">
+				Aides aux démarches administratives et juridiques
+			</h1>
+		</div>
 
 		<div class="Bloc1">
 
-			<h2>Nos services
-				<H2>
-					<p>
-						Démarches administratives et juridiques pour Particuliers et Professionels
-					</p>
-					<p>
-						Tout besoin de domiciliation administrative pour Particuliers et entreprises
-					</p>
-					<p>
-						Tout service susceptible de contribuer à la réalisation, au développement ou à l'amélioration des conditions de vie des membres ou des adhérents.
-					</p>
-				</div>
-
-				<div class="button">
-					<div class="btn1">
-
-						<a href="{{ path('particuliers') }}">
-							<span class="text-btn1">Particuliers</span>
-						</a>
-
-					</div>
-					<div class="btn2">
-						<a href="{{ path('professionel') }}">
-							<span class="text-btn1">Professionels</span>
-						</a>
-					</div>
-
-				</div>
-
-
-				<footer>
-
-					<span id="text-h">
-						276 , Rue de Rosny 93100 MONTREUIL
-					</span>
-					<span id="text-b">+33 0658082587 / +33 0650033257  Lassociation2020@yahoo.com
-					</span>
-
-
-				</footer>
-			</body>
-			{% endapply %}
-		{% endblock %}
+			<h2 class="bloc-container">Nos services
+			</h2>
+			<p class="deep1">
+				Démarches administratives et juridiques pour Particuliers et Professionels
+			</p>
+			<p class="deep2">
+				Tout besoin de domiciliation administrative pour Particuliers et entreprises
+			</p>
+			<p class="deep3">
+				Tout service susceptible de contribuer à la réalisation, au développement ou à l'amélioration des conditions de vie des membres ou des adhérents.
+			</p>
+		</div>
+		<div class="pres">
+			<img src="{{ asset('images/Aide-juridique-Divorce.jpg') }}" alt="logo CAF">
+		</div>
+	</body>
+	{% endapply %}
+{% endblock %}
